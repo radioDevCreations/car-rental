@@ -153,13 +153,12 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Employee</label>
+    <label>Accessory</label>
     <nameField>
-        <displayFormat>E-{00000}</displayFormat>
-        <label>Employee Number</label>
-        <type>AutoNumber</type>
+        <label>Accessory Name</label>
+        <type>Text</type>
     </nameField>
-    <pluralLabel>Employees</pluralLabel>
+    <pluralLabel>Accessories</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <startsWith>Vowel</startsWith>
