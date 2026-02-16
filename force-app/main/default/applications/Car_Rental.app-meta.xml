@@ -13,12 +13,9 @@
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>Car Rental</label>
     <navType>Standard</navType>
-    <tabs>standard-Case</tabs>
-    <tabs>standard-Opportunity</tabs>
-    <tabs>standard-Lead</tabs>
-    <tabs>standard-Contact</tabs>
-    <tabs>standard-Account</tabs>
     <tabs>CR_Vehicle__c</tabs>
+    <tabs>CR_Reservation__c</tabs>
+    <tabs>CR_Employee__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Car_Rental_UtilityBar</utilityBar>
 </CustomApplication>
