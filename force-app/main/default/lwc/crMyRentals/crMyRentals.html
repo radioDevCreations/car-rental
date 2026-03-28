@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="My Rentals">
+        <div class="slds-m-around_medium">
+            <lightning-datatable
+                key-field="Id"
+                data={reservations}
+                columns={columns}
+                hide-checkbox-column
+                show-row-number-column
+                onrowaction={handleRowAction}    
+            ></lightning-datatable>
+        </div>
+    </lightning-card>
+</template>
