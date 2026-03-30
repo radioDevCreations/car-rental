@@ -1,0 +1,9 @@
+<template>
+    <lightning-card>
+        <template if:true={vehicles}>
+            <template for:each={vehicles} for:item="vehicle">
+                <c-cr-vehicle-card key={vehicle.Id} vehicle={vehicle}></c-cr-vehicle-card>
+            </template>
+        </template>
+    </lightning-card>
+</template>

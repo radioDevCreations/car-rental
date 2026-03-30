@@ -1,4 +1,4 @@
-public with sharing class CR_ReservationsSelector {
+public with sharing class CR_ReservationSelector {
     public static List<CR_Reservation__c> getReservationsByIds(Set<Id> reservationIds) {
         return [SELECT Id, Name, StartTime__c, EndTime__c, Vehicle__c, User__c FROM CR_Reservation__c WHERE Id IN :reservationIds];
     }

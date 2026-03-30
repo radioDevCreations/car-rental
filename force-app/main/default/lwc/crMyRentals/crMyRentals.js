@@ -42,10 +42,10 @@ export default class CrMyRentals extends LightningElement {
     ];
 
     connectedCallback() {
-        this.loadData();
+        this.fetchMyReservations();
     }
 
-    loadData() {
+    fetchMyReservations() {
         getMyReservations()
             .then(result => {
                 this.reservations = result;
@@ -72,13 +72,9 @@ export default class CrMyRentals extends LightningElement {
 
     handleView(row) {
         console.log('View:', row);
-
-        // 👉 tu możesz dodać NavigationMixin do przejścia na rekord
     }
 
     handleCancel(row) {
         console.log('Cancel:', row);
-
-        // 👉 tu możesz wywołać Apex do anulowania rezerwacji
     }
 }
