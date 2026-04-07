@@ -1,0 +1,38 @@
+.vehicle-card {
+    border: 1px solid #d8dde6;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 200px;
+    height: 240px;
+}
+
+.vehicle-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vehicle-card__make {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 8px;
+}
+
+.vehicle-card__model {
+    font-size: 1.125rem;
+    color: #666666;
+    margin-bottom: 8px;
+}
+
+.vehicle-card__vrn {
+    font-size: 1rem;
+    color: #999999;
+    margin-bottom: 8px;
+}
+
+.vehicle-card__vin {
+    font-size: 0.875rem;
+    color: #cccccc;
+}

@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 import getVehicles from '@salesforce/apex/CR_VehicleController.getVehicles';
 
 export default class CrVehiclesBoard extends LightningElement {
@@ -11,12 +11,12 @@ export default class CrVehiclesBoard extends LightningElement {
     fetchVehicles() {
         getVehicles()
             .then(result => {
-                this.reservations = result;
+                this.vehicles = result;
             })
             .catch(error => {
                 console.error(error);
             });
     }
 
-    
+
 }

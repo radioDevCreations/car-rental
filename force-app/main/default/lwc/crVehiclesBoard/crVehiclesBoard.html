@@ -1,9 +1,11 @@
 <template>
-    <lightning-card>
-        <template if:true={vehicles}>
-            <template for:each={vehicles} for:item="vehicle">
-                <c-cr-vehicle-card key={vehicle.Id} vehicle={vehicle}></c-cr-vehicle-card>
+    <div class="vehicles-board">
+        <div class="vehicles-board__layout">
+            <template if:true={vehicles}>
+                <template for:each={vehicles} for:item="vehicle">
+                    <c-cr-vehicle-card key={vehicle.Id} vehicle={vehicle}></c-cr-vehicle-card>
+                </template>
             </template>
-        </template>
-    </lightning-card>
+        </div>
+    </div>
 </template>
