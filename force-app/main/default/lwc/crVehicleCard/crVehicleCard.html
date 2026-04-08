@@ -1,8 +1,13 @@
 <template>
     <div class="vehicle-card">
-        <div class="vehicle-card__make">{vehicle.Make__c}</div>
-        <div class="vehicle-card__model">{vehicle.Model__c}</div>
-        <div class="vehicle-card__vrn">{vehicle.VRN__c}</div>
-        <div class="vehicle-card__vin">{vehicle.VIN__c}</div>
+        <div class="vehicle-card__info">
+            <div class="vehicle-card__make">{vehicle.Make__c}</div>
+            <div class="vehicle-card__model">{vehicle.Model__c}</div>
+            <div class="vehicle-card__vrn">{vehicle.VRN__c}</div>
+            <div class="vehicle-card__vin">{vehicle.VIN__c}</div>
+        </div>
+        <div class="vehicle-card__photo">
+            <img src={vehicle.PhotoURL__c} alt="Vehicle Photo" class="vehicle-card__image"/>
+        </div>
     </div>
 </template>
